@@ -1,2 +1,3 @@
-# The-game2
-my first incremental game.
+# The-game
+My first incremental game. 
+Will update this. :)
