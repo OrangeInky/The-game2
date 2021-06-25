@@ -1,0 +1,10 @@
+The Game v1-v2:
+1: So I've add a new building: City, in this update. It's a fairly powerful building that produces 20 cookies per second!
+2: I've added a CPS(cookies per second) to make you see how much cookie you make per second!
+3: I made a background!
+4: music you can play!
+5: A "ending" when you reach cookies amount 1e20, (which means a number start with 1 and twenty digits of 0 after it, or translate to 1 billion x 1 billion) :)
+
+However, the save and load is still broken, so don't refresh the page. You will lose your save progress after quitting the game,sadge.I will try to fix this the next version, but I currently have no idea how to.
+
+anyway, enjoy ur game.
