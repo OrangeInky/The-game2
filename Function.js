@@ -36,14 +36,14 @@ function buyFarm(){
 var citys = 0;
 
 function buyCity() {
-    var cityCost = Math.floor(40000 * Math.pow(1.075,citys))
+    var cityCost = Math.floor(20000 * Math.pow(1.075,citys))
     if (cookies >= cityCost) {
         citys = citys + 1;
         cookies = cookies - cityCost;
         document.getElementById('citys').innerHTML = citys;
         document.getElementById('cookies').innerHTML = cookies;
     };
-    var nextCostCity = Math.floor(40000 * Math.pow(1.075,citys));
+    var nextCostCity = Math.floor(20000 * Math.pow(1.075,citys));
     document.getElementById('cityCost').innerHTML = nextCostCity;
 };
 
@@ -56,8 +56,8 @@ window.setInterval(function(){
 }, 1000);
 
 window.setInterval(function(){
-    cookieClick(farms * 3 ** (1 + farms/999) * (cursors/10));
-    cookieClick(citys * 10 ** (1 + farms/99) * (farms/10));
+    cookieClick(farms * 3 ** (1 + farms/100) * (cursors/30));
+    cookieClick(citys * 10 ** (1 + farms/100) * (farms/30));
     endGame();
 }, 1000/2); 
 
