@@ -69,8 +69,6 @@ function saving() {
         Citys: citys,
     }
     localStorage.setItem('save',JSON.stringify(save));
-    document.getElementById('cursors').innerHTML = cursors;
-    document.getElementById('cursorCost').innerHTML = nextCostCursor;
 }
 
 function load() {
