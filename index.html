@@ -1,0 +1,27 @@
+  
+<html>
+	<head>
+	<link rel="stylesheet" href="Background.css">
+		The game 
+		<br/>
+		Hint: hover over the upgrades to see their effect!
+        <br/>
+	</head>
+	<body onload="load()">
+		<button onclick="cookieClick()" title="Gives you Cookies base on the your current cookie perclick">Bake Cookie!</button> 
+		<button onclick="buycookiesPerClick()" title="Adds 1 to your current cookies per click">Upgrade: Bake 1 more cookies per click!</button> 
+		<button onclick="buydoublecookiesPerclick()" title="Multiply your current cookies perclick by 2">	Upgrade: Bake Twice as much cookies per click!</button>
+		<span id="cookiesPerClick">Your current cookiesPerClick: 1</span>
+		<br/>
+		<span id="cookiesbaked">0 cookies</span> 
+	 <span id="cookiesPerClickCost">Upgrade 2 Cost: 80 cookies</span>
+	 <span id="doublecookiesPerclickCost">Upgrade 1 Cost: 524 cookies</span>
+	 <br/>
+	 <button onclick="buyautoBakerOne()">AutoBakers!</button>
+	 <br/>
+	 AutoBakerOne:<span id="autoBakerOne">0</span>
+	 <br/>
+	 AutoBakerOneCost:<span id="autoBakerOneCost">200</span>
+     <script type="text/javascript" src="Function.js"></script>
+	</body>
+</html>
