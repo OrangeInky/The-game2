@@ -5,25 +5,48 @@
 		The game 
 		<br/>
 		Hint: hover over the upgrades to see their effect!
+	</br>
+		<button onclick="cookieClick()" title="Gives you Cookies base on the your current cookie perclick">Bake Cookie!</button>
+		<span id="cookiesbaked">0 cookies</span> 
+</br>
+		cookies per second:<span id="cookiesPerSecond"> 0</span>
+</br>
+		<span id="cookiesPerClick">Your current cookiesPerClick: 1</span>
         <br/>
 	</head>
 	<body onload="load()">
-		<button onclick="cookieClick()" title="Gives you Cookies base on the your current cookie perclick">Bake Cookie!</button> 
-		<button onclick="buycookiesPerClick()" title="Adds 1 to your current cookies per click">Upgrade: Bake 1 more cookies per click!</button> 
-		<button onclick="buydoublecookiesPerclick()" title="Multiply your current cookies perclick by 2">	Upgrade: Bake Twice as much cookies per click!</button>
-		<span id="cookiesPerClick">Your current cookiesPerClick: 1</span>
+	</br>
+		<div id ="Tabs">
+			<button onclick="tab('Cookies')">cookies</button>
+			<button onclick="tab('upgrade')">upgrades</button>
+			<button onclick="tab('settings')">settings</button>
+
+	    </div>
+		<div id ="Cookies">
+		</br>
+		<button onclick="buyautoBakerOne()">AutoBakerOne!</button>
 		<br/>
-		<span id="cookiesbaked">0 cookies</span> 
-	 <span id="cookiesPerClickCost">Upgrade 2 Cost: 80 cookies</span>
-	 <span id="doublecookiesPerclickCost">Upgrade 1 Cost: 524 cookies</span>
-	 <br/>
-	 <button onclick="buyautoBakerOne()">AutoBakers!</button>
-	 <br/>
-	 AutoBakerOne:<span id="autoBakerOne">0</span>
+		AutoBakerOne:<span id="autoBakerOne">0</span>
 	 <br/>
 	 AutoBakerOneCost:<span id="autoBakerOneCost">200</span>
-     <script type="text/javascript" src="Function.js"></script>
+	 </div>
+	 <script type="text/javascript" src="Function.js"></script>
+	 <script src="Integer  limit.js"></script>
 	</body>
-	<br/>
-	<button onclick="resetgame()">Reset game!!</button>
 </html>
+
+<div id = "upgrade">
+<button onclick="buycookiesPerClick()" title="Adds 1 to your current cookies per click">Upgrade: Bake 1 more cookies per click!</button> 
+<button onclick="buydoublecookiesPerclick()" title="Multiply your current cookies perclick by 2">	Upgrade: Bake Twice as much cookies per click!</button>
+</br>
+<span id="cookiesPerClickCost">Upgrade 2 Cost: 80 cookies</span>
+<span id="doublecookiesPerclickCost">Upgrade 1 Cost: 524 cookies</span>
+</br>
+<button onclick="buyautoBakerOneUpgrade()">AutoBakerOneUpgrade!</button>
+</br>
+Upgradeone:<span id="AutobakerOneUpgrade">0</span>
+UpgradeOneCost:<span id="UpgradeOneCost">0</span>
+</div>
+<div id = "settings">
+<button onclick="resetgame()">Reset game!!</button>
+</div>
