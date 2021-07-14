@@ -122,8 +122,6 @@ function load() {
     document.getElementById('autoBakerOneCost').innerHTML = " " + Math.round(gamedatas.autobakers.autoBakerOneCost);
 }
 
-
-
 function tab(tab) {
     document.getElementById('Cookies').style.display = "none"
     document.getElementById('upgrade').style.display = "none"
